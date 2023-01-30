@@ -1,3 +1,4 @@
+depth = -5000;
 frameWidth = 32;
 frameHeight = 64;
 

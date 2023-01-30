@@ -14,15 +14,16 @@ function instance_create_crop(){
 		var yy = gy*cs;
 
 		//Check for soil
-		var lay_id = layer_get_id("T_Soil");
-		var map_id = layer_tilemap_get_id(lay_id);
-		var data = tilemap_get_at_pixel(map_id, argument0, argument1);
+		//var lay_id = layer_get_id("T_Soil");
+		//var map_id = layer_tilemap_get_id(lay_id);
+		var data = tilemap_get_at_pixel(global.ground_tilemap_soil, argument0, argument1);
 
 		if(data == 0){
-			show_debug_message("there is no soil here.");
+			show_debug_message("No esta la tierra preparada.");
 			return false;
 		} else {
-			show_debug_message("there is soil here.");
+			show_debug_message("Aqui la tierra esta preparada.");
+			global.clickCount2 ++;
 		}
 
 		//Create the instance
@@ -37,7 +38,7 @@ function instance_create_crop(){
 
 		return inst;
 	} else {
-		show_debug_message("There is already something there");
+		show_debug_message("Ya hay algo aqui");
 		return false;
 	}
 

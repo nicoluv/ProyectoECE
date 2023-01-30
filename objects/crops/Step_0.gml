@@ -18,7 +18,7 @@ if(planting){
 }
 #endregion
 
-if(instance_exists(obj_crop) and keyboard_check_pressed(ord("G"))){
+if(instance_exists(obj_crop) and keyboard_check_pressed(ord(global.rand_text))){
 	with(obj_crop){
 		if(growthStage < maxGrowthStage){
 			daysOld += 1;

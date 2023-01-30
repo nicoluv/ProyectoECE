@@ -9,9 +9,9 @@ var c = c_red;
 var cell = ds_crops_instances[# gx, gy];
 
 if(cell == 0){
-	var lay_id = layer_get_id("T_Soil");
-	var map_id = layer_tilemap_get_id(lay_id);
-	var data = tilemap_get_at_pixel(map_id, mx, my);
+	//var lay_id = layer_get_id("T_Soil");
+	//var map_id = layer_tilemap_get_id(lay_id);
+	var data = tilemap_get_at_pixel(global.ground_tilemap_soil, mx, my);
 	if(data != 0) { c = c_lime; }
 }
 
