@@ -1,0 +1,1 @@
+global.cut = true;

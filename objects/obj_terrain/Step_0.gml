@@ -1,3 +1,4 @@
+if(global.dispear){instance_destroy();}
 if(global.selected){
 	image_alpha = 0.5;
 	x = mouse_x - (mouse_x%16);
@@ -20,6 +21,4 @@ if(global.selected){
 		global.clickCount++; 
 		
 	}
-
-
 }

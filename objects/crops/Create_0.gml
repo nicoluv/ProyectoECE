@@ -1,4 +1,5 @@
 global.clickCount2 = 0;
+global.grown = false;
 ds_crops_types = -1;
 ds_crops_instances = -1;
 

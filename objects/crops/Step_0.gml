@@ -14,6 +14,7 @@ if(planting){
 	
 	if(mouse_check_button_pressed(mb_left)){
 		instance_create_crop(mx, my, selectCrop);
+		planting = !planting;
 	}
 }
 #endregion
@@ -31,6 +32,7 @@ if(instance_exists(obj_crop) and keyboard_check_pressed(ord(global.rand_text))){
 		} else {
 			growthStage = maxGrowthStage;
 			fullyGrown = true;
+			global.grown = true;
 			alarm[1] = 1;
 		}
 		

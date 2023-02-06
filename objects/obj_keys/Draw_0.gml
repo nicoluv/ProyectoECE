@@ -4,6 +4,7 @@
 
 //position1 = choose(fa_center,fa_right,fa_left);
 //position2 = choose(fa_middle,fa_bottom,fa_top);
+if(global.dispear){instance_destroy();}
 
 if(global.clickCount2 > 0){
 
